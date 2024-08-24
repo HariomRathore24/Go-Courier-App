@@ -1,0 +1,103 @@
+<!-- activity_otp_verification.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E5E8E8"
+    >
+    <TextView
+        android:id="@+id/textViewEnterOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutOTPBoxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/editTextOTP1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextOTP2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextOTP3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"/>
+        <EditText
+            android:id="@+id/editTextOTP4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextOTP5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"/>
+
+        <EditText
+            android:id="@+id/editTextOTP6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonVerifyOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn"
+        android:paddingHorizontal="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CalculateShipping">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Shiping"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginStart="25dp"
+            android:textSize="24sp"
+           />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/calculator_back_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            >
+
+            <EditText
+                android:id="@+id/editCurrentLocation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/inputlocation_bg"
+                android:hint="current location"
+                android:imeOptions="actionSearch"
+
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/editDestination"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/inputlocation_bg"
+                android:hint="Set Destination"
+                android:imeOptions="actionSearch"
+
+                android:inputType="text"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:padding="8dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Weight"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                >
+
+                <EditText
+                    android:id="@+id/editWeightKg"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/inputlocation_bg"
+                    android:hint="(1 lbs=0.5845 kg)"
+                    android:imeOptions="actionSearch"
+
+                    android:inputType="text"
+
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    />
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:text="Kg"
+                    android:gravity="center"
+                    android:background="@drawable/kg_bg"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="58dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:text="lbs"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/lbs_bg"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    android:layout_marginStart="10dp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup Date and Time"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                >
+
+                 <RelativeLayout
+                     android:layout_width="160dp"
+                     android:layout_height="60dp"
+                     android:background="@drawable/inputlocation_bg"
+                     android:padding="8dp"
+                     >
+                     <EditText
+                         android:id="@+id/editTextDate"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:hint="@string/select_a_date"
+                         android:focusable="true"
+                         android:clickable="true"
+                         android:textSize="12sp"
+                         android:textColorHint="@color/black"
+                         android:layout_toStartOf="@+id/imageViewCalendar"
+                         android:layout_alignParentStart="true"
+                         android:inputType="none"
+                         android:background="@drawable/inputlocation_bg"
+                         />
+
+                     <!-- Calendar icon -->
+                     <ImageView
+                         android:id="@+id/imageViewCalendar"
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:src="@drawable/calendar"
+                         android:layout_alignParentEnd="true"
+                         android:layout_centerVertical="true"
+                         android:clickable="true"
+                         android:contentDescription="calendar icon"/>
+                 </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/inputlocation_bg"
+                    android:padding="8dp"
+                    android:layout_marginStart="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/editTextTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/set_time"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:textSize="16sp"
+                        android:textColorHint="@color/black"
+                        android:layout_toStartOf="@+id/imageViewClock"
+                        android:layout_alignParentStart="true"
+                        android:inputType="none"
+                        android:background="@drawable/inputlocation_bg"
+                        />
+
+                    <!-- Calendar icon -->
+                    <ImageView
+                        android:id="@+id/imageViewClock"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/clock"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:contentDescription="@string/calendar_icon"
+                        android:focusable="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pickup Type"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:padding="8dp"-->
+<!--            android:background="@drawable/inputlocation_bg"-->
+<!--            >-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="18sp"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/icon"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginStart="90dp"-->
+<!--                android:src="@drawable/arrow_down"-->
+<!--                /> &lt;!&ndash; Default icon, replace with your icon &ndash;&gt;-->
+<!--        </LinearLayout>-->
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="end"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:orientation="horizontal">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Product Details"
+                 android:textColor="@color/black"
+                 android:textSize="18sp"
+                 android:textStyle="bold"
+                 />
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="(Optional)"
+                 android:textSize="14sp"
+                 android:layout_marginLeft="5dp"
+                 />
+
+         </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/inputlocation_bg"
+                android:hint="Enter Product Details!"
+                android:textColorHint="#808B96"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:layout_marginTop="10dp"
+                />
+
+          <Button
+              android:id="@+id/submitButton"
+              android:layout_width="match_parent"
+              android:layout_height="56dp"
+              android:text="Submit"
+              android:layout_marginTop="15dp"
+              android:background="@drawable/submit_bg"
+              android:textColor="@color/white"
+              />
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "766749941047",
+    "project_id": "courierservice-d1f4e",
+    "storage_bucket": "courierservice-d1f4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766749941047:android:667981f7bc345ffa9fceb2",
+        "android_client_info": {
+          "package_name": "com.example.courierserviceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWEHucecKdLhjebgRDQyZhvIImg_YUOeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:elevation="5dp">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User name"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                />
+            <TextView
+                android:id="@+id/userMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user123@gmail.com"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+
+               <Button
+                   android:id="@+id/editProfile"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:text="Edit profile"
+                   android:textColor="#2D3DC8"
+                   android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#E5E8E8"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Benefits"
+            android:textSize="20sp"
+            android:textColor="#545557"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/benefits_bg"
+                android:padding="15dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:elevation="2dp"
+                        android:background="@drawable/frame_icon_bg"
+
+                        >
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/star"
+                            android:layout_gravity="center"
+                            app:tint="#2D3DC8" />
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rewards"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/coin"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="140dp"
+                        />
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/next"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <FrameLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/frame_icon_bg"
+                        android:elevation="2dp"
+                        >
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/gift"
+                            android:layout_gravity="center"
+                            app:tint="#2D3DC8" />
+                    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Refer your friends"
+                        android:textColor="@color/black"
+                       android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:textSize="16sp"/>
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/invite_bg"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+
+                        >
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/share"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="20dp"
+                            app:tint="#2D3DC8" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="invite"
+                            android:layout_gravity="center"
+                            android:textColor="#2D3DC8"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14sp"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support and Legal"
+            android:textSize="20sp"
+            android:textColor="#545557"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/benefits_bg"
+                android:padding="15dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/frame_icon_bg"
+                        android:elevation="2dp"
+                        >
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/question"
+                            android:layout_gravity="center"
+                            app:tint="#2D3DC8" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact support"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/next"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="100dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+                    <FrameLayout
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/frame_icon_bg"
+                        android:elevation="2dp"
+                        >
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/document"
+                            android:layout_gravity="center"
+                            app:tint="#2D3DC8" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms and conditions"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/next"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="60dp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="settings"
+            android:textSize="20sp"
+            android:textColor="#545557"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp">
+
+            <LinearLayout
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/benefits_bg"
+                android:padding="10dp">
+
+                <FrameLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/frame_icon_bg"
+                    android:elevation="2dp"
+                    >
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/logout"
+                        android:layout_gravity="center"
+                        app:tint="#2D3DC8" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                   android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="170dp"
+                    android:src="@drawable/next" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App version  0.1.1"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:textColor="#5E5E61"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

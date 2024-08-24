@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E5E8E8"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go-Courier"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:src="@drawable/login_bg_img"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/login_bk_bg"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:elevation="20dp"
+            android:outlineSpotShadowColor="@color/grey">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="with the valid number you can acess deliveries and other services"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/grey"
+                android:layout_marginBottom="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91"
+                    android:textColor="@color/blue"
+                    android:background="@drawable/login_input_bg"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:layout_marginEnd="2dp"/>
+                <EditText
+                    android:id="@+id/phoneNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter phone number"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/login_input_bg"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:paddingHorizontal="90dp"
+                android:background="@drawable/login_btn"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

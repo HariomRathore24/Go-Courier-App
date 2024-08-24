@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E8E8"
+    tools:context=".OrderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:elevation="2dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/order_icon_bg"
+                android:padding="30dp"
+                android:elevation="2dp"
+                android:layout_marginTop="70dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/package_img"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Order!"
+                android:textStyle="bold"
+                android:textSize="24sp"
+               android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order history limited to last 2 years."
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For older orders,contact our support team."
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/bookNow"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="Book Now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/book_now_bg"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

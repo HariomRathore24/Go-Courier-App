@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CourierServiceApp</string>
+    <string name="enter_product_number_to_start_tracking">Enter product Number to start tracking</string>
+    <string name="track_your_order">Track Your order</string>
+    <string name="for_ex_ds12846758">for ex:DS12846758</string>
+    <string name="see_all">See all</string>
+    <string name="our_services">Our Services</string>
+    <string name="select_a_date">Select a Date</string>
+    <string name="set_time">Set time</string>
+    <string name="calendar_icon">calendar icon</string>
+    <string name="todo">TODO</string>
+    <string name="icon">Icon</string>
+    <string-array name="planets_array">
+        <item>Select picker type</item> <!-- Default text -->
+        <item>Personal Documents</item>
+        <item>Courier Items</item>
+        <item>house shifting</item>
+        <item>other Delivery item</item>
+        <!-- Add more items as needed -->
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
