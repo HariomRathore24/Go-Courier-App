@@ -27,11 +27,17 @@ https://github.com/user-attachments/assets/190070f4-9fba-452b-85bb-063ab1a2baed
 
 # How it Works 
 Open the app and select "Delivery Package."  
+
 Enter package details like dimensions, weight, and contents. 
+
 Choose delivery type (same-day, next-day, or standard).  
+
 Select pickup location and recipient address.  
+
 Choose courier service based on rates and delivery time. 
+
 Confirm order and make payment.  
+
 Track package status until it's delivered. 
 # Delivery Options  
 Same-Day Delivery: Get your package delivered the same day if ordered before the cutoff time. 
@@ -49,10 +55,15 @@ We work with trusted partners to ensure your packages arrive safely, no matter t
 
 # Tech Stack 
 Android Studio: The primary IDE for developing the app.  
+
 Java: The programming language used for app development.  
+
 XML: For designing the user interface and layouts.  
-Firebase: For real-time database and user authentication.  
+
+Firebase: For real-time database and user authentication. 
+
 Retrofit: For making network requests to fetch courier service data. 
+
 Google Maps API: For real-time tracking and location services.
 
 # Contributing  
