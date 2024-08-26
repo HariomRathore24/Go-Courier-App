@@ -10,9 +10,14 @@ Real-time Tracking: Monitor your package's progress from pickup to delivery with
 Saved Addresses: Store frequently used sender and recipient addresses for faster order placement. 
 
 # Video Walkthrough
-Check out the video below to see the Food Order App UI in action:
+Check out the video below to see the Courier Service App UI in action:
 
-https://github.com/user-attachments/assets/cbdb8d6c-c042-4b1f-b774-05409b79141da
+
+
+https://github.com/user-attachments/assets/190070f4-9fba-452b-85bb-063ab1a2baed
+
+
+
 
 # How it Works 
 Open the app and select "Delivery Package."  
