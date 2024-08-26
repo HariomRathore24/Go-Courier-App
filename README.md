@@ -31,7 +31,6 @@ Enter package details like dimensions, weight, and contents.
 Choose delivery type (same-day, next-day, or standard).  
 Select pickup location and recipient address.  
 Choose courier service based on rates and delivery time. 
-
 Confirm order and make payment.  
 Track package status until it's delivered. 
 # Delivery Options  
@@ -54,7 +53,6 @@ Java: The programming language used for app development.
 XML: For designing the user interface and layouts.  
 Firebase: For real-time database and user authentication.  
 Retrofit: For making network requests to fetch courier service data. 
-
 Google Maps API: For real-time tracking and location services.
 
 # Contributing  
